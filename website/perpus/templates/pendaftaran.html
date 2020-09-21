@@ -1,0 +1,9 @@
+{% block content %}
+<h2> Pendaftaran </h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Daftar</button>
+</form>
+
+{% endblock content %}
